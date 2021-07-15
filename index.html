@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/icon.jpg">
+    <title>WEB 1.0</title>
+</head>
+<body>
+    <div class="container">
+        <header id="home">
+            <nav>
+                <a class="logo" href="/">Trabalho de WEB</a>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="img-wrapper">
+                <img src="imgs/bc.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>Projeto Web 1.0</h1>
+                <p> </p>
+              <!-- <button>Saiba mais</button> -->
+            </div>            
+        </header>
+        <div class="formulario-wrapper">
+            <div class="formulario-right">
+                    <h1 class="titulo">
+                        Deixe sua mensagem!
+                    </h1>
+            
+                    <div class="conteudo">
+                        <div>
+                            <div style="margin: 10px">
+                                <label>Nome</label>
+                                <input type="text" id="nome" />
+                            </div>
+                            <div style="margin: 10px">
+                                <label>Mensagem</label>
+                                <input type="text" id="mensagem" />
+                            </div>
+                            <button class="enviar" onclick="enviarMensagem()">Enviar</button>
+                        </div>
+                    </div>
+                <section>
+                    <ul id="quadro"></ul>
+                </section>
+            </div>
+        </div>
+        <section class="sessao-sobre" id="sobre">
+            <div class="sessao-header">
+                <h1>Sobre</h1>
+            </div>
+            <div class="autores">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imgs/Paulo.jpg" alt="foto autor1" />
+                    </div>
+                    <div class="card-info">
+                        <h2>Francisco Paulo Sérgio da Silva</h2>
+                        <h3>Estudante de Engenharia de Software</h3>
+                        <p>Estudante com foco UX/UI Design e Análise de Requisitos.</p>
+                    </div>
+                </div>
+                <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imgs/Pedro.jpg" alt="foto autor2" />
+                        </div>
+                        <div class="card-info">
+                            <h2>Pedro Lima de Oliveira Filho</h2>
+                            <h3>Estudante de Engenharia de Software</h3>
+                            <p>Estudante com foco em Análise de Requisitos e Marketing Digital.</p>
+                        </div>
+                 </div>
+                <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imgs/Talam.jpg" alt="foto autor3" />
+                        </div>
+                    <div class="card-info">
+                            <h2>Lucas Talam Maia</h2>
+                            <h3>Técnico em Informática e Estudante de Engenharia de Software</h3>
+                            <p>Foco em Desenvolvimento Back-end com C# .NET, API's REST.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sessao-contato" id="contato">
+            <form name="formteste" action="" method="post">
+                <h1>Contato</h1>
+                
+                <p class="nome">
+                <input type="text" name="nome" placeholder="Informe seu nome" required="required">
+                </p>
+                                
+                <p class="assunto">
+                <input type="text" name="assunto" placeholder="Informe o assunto" required="required">
+                </p>
+                
+                <p class="mensagem">
+                <textarea name="mensagem" placeholder="Deixe sua mensagem"></textarea>
+                </p>
+                
+                <p class="enviar">
+                <input type="submit" name="enviar" value="Enviar">
+                </p>
+                <div class="telefone">
+            
+                    <p classe="telefone">Telefone: 
+                        <a href="tel:+55 (88) 9 8148-7900">+55 (88) 9 8148-7900</a></p>
+                </div>
+                <div class="email">
+                    <p>
+                        Contato por  e-mail:
+                        <a href="paulo:paulosergiorussas@gmail.com?subject=Hello%20again">Send E-mail</a>
+                    </p>
+                </div>
+            </form>
+            
+        </section>
+
+               <!-- <section class="sessao-contato">
+                    <div class="contato-wrapper">
+                        <div class="contato">
+                            <h1>Contato</h1>
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="field" id="nome">
+                                    <label for="nome" class="field label">Nome</label>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="field" id="assunto">
+                                    <label for="assunto" class="field label">Assunto</label>
+                                </div>
+                                <div class="input-group">
+                                    <textarea class="field"></textarea id="mensagem">
+                                    <label for="mensagem" class="field label">Mensagem</label>
+                                </div>
+                                <button type="submit" class="btn">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>-->
+                
+        <footer>
+            
+                <p>Copyright &copy 2021 - Todos os direitos reservados</p>
+                <div class="botao">
+                     <button onclick="exibirCreditos()">Créditos</button>
+                </div>
+                
+        </footer>
+        <a href="#home" id="link-top">
+            <span>&#8593;</span> 
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
